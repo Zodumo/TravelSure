@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
     <link rel="stylesheet" href="./assets/style.css" />
+
     <title>My HTML Page</title>
 </head>
 
@@ -17,27 +18,90 @@
         <p class="lead">Search to find flights from and to cities of your choice.</p>
         <hr class="my-4">
         <p>Find the weather info at the destination and prepare accordingly.</p>
-        <a class="btn btn-primary btn-lg" href="#" role="button">Search flight</a>
+        <a class="btn btn-primary btn-lg" href="#" role="button" id= "search-btn">Search flight</a>
     </div>
 
     <div class="container">
         <div class="form-group">
-            <label for="input1">Depart from:</label>
+            <label for="input1" id="input1">Depart from:</label>
             <input type="text" class="form-control" id="input1">
         </div>
 
         <div class="form-group">
-            <label for="input2">Destination:</label>
+            <label for="input2" id="input2">Destination:</label>
             <input type="text" class="form-control" id="input2">
         </div>
 
         <div>
-            <label for="dateInput">From Date:</label>
+            <label for="dateInput" id="dateInput">From Date:</label>
             <input class="form-control" type="date" id="dateInput">
         </div>
 
     </div>
 
+    <!-- card 1 -->
+    <div class="container">
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                    <img src="..." alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>     
+    </div>
+
+
+    <!-- card 2 -->
+    <div class="container">
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                    <img src="..." alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>     
+    </div>
+
+
+    <!-- card 3 -->
+    <div class="container">
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                    <img src="..." alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>     
+    </div>
+
 </body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="./js/script.js"></script>
+<script src="./js/keys.js"></script>
 
 </html>

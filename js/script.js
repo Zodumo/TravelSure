@@ -1,7 +1,30 @@
+// HTML SELECTING //
+
+// Search button and flight input to find the flights
+var searchBtn = document.querySelector("#search-btn");
+var cityDepart = "London";
+var citydestination = document.querySelector("#input2");
+var flyDays = document.querySelector("#dateInput");
+
+// document.querySelector("#input1");
+
+function flight(){
+  var cityDepart = "London";
+}
+
+console.log(flight);
+
+
+
+
+
+
+
+
+
 
 var city = "Kingston";
 var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + weatherKey;
-
 
 $.ajax({
   url: queryURL,
@@ -21,6 +44,8 @@ $.ajax({
 }).then(function(response) {
   console.log(response);
 });
+
+
 
 
 

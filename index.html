@@ -17,12 +17,13 @@
     <div class="container-fluid">
         <div class="row navbar navbar-lght bg-lght">
             <div class="col-12 text-center">
-                <h1>Weather Dashboard</h1>
+                <h1>TravelSure Dashboard</h1>
             </div>
         </div>
         <div class="row content-row">
             <div class="col-12 col-md-3 bg-light pt-3">
-                <h4>Search City</h4>
+                <h4>Departure City</h4>
+
                 <!--Search input-field and button-->
                 <form action="">
                     <div class="form-group input-group">
@@ -33,6 +34,22 @@
                                 <i class="fa fa-search"></i>
                             </button>
                         </div>
+                    </div>
+
+                    <h4>Arrival City</h4>
+                    <div class="form-group input-group">
+                        <input type="text" class="form-control" id="search-city"
+                            placeholder="Enter city name ex. London">
+                        <div class="input-group-append">
+                            <!-- <button class="btn btn-success" type="button" id="search-city-button">
+                                <i class="fa fa-search"></i>
+                            </button> -->
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="dateInput">From Date:</label>
+                        <input class="form-control" type="date" id="dateInput">
                     </div>
                 </form>
                 <!-- Saved Search History-->
@@ -50,7 +67,7 @@
                     <div class="col-12">
 
                         <!--current weather section-->
-                        <div class="city-info border rounded my-3 px-3 py-3">
+                        <!-- <div class="city-info border rounded my-3 px-3 py-3">
                             <h2 id="current-city">Current Weather At: <small class="text-muted"
                                     id="current-date"></small></h2>
 
@@ -59,13 +76,13 @@
                             <p class="mb-0">Wind: <span id="current-wind-speed"></span></p>
 
                             <p class="mb-0">Humidity: <span id="current-humidity"></span></p>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-12">
                         <!--Heading-->
-                        <h3>5-Day Forecast</h3>
+                        <h3>Results</h3>
 
                     </div>
                 </div>
@@ -94,7 +111,8 @@
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <!--local script-->
-    <script src="./js/script.js"></script>
+    <script src="./js/weather.js"></script>
+    <script src="./js/flight.js"></script>
 
 </body>
 

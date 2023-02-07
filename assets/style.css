@@ -1,4 +1,25 @@
-.container {
-    display: flex;
-    justify-content: space-between;
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+body {
+  font-family: 'Muli', sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  
+}
+h1 {
+  font-family: 'Quicksand', sans-serif;
+  
+  color: rgba(0, 0, 0, 0.8);
+  -webkit-font-smoothing: antialiased;
+}
+html, body, .container-fluid, .content-row {
+    height: 100%;
+}
+
+.hide {
+    display: none;
+}
+
+
+.card {
+    background-color: #c8b6ff;
 }

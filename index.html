@@ -20,7 +20,7 @@
 </div>
 <div class="row content-row">
     <div class="col-12 col-md-3 bg-light pt-3">
-        <h4>Departure City</h4>
+        <h4>Arrival City</h4>
         <!--Search input-field and button-->
         <form action="">
             <div class="form-group input-group">
@@ -33,7 +33,7 @@
             </div>
 
             <br>
-            <h4>Arrival City</h4>
+            <h4>Departure City</h4>
             <div class="form-group input-group">
                 <input type="text" class="form-control" id="arrival-city" placeholder="Enter city name ex. London">
                 <div class="input-group-append">
@@ -43,6 +43,15 @@
                 </div>
             </div>
         </form>
+
+        <div>
+            <label for="dateInput">From Date:</label>
+            <input class="form-control" type="date" id="dateInput">
+            </div>
+
+        <button class="btn btn-success" type="button" id="search-flight-button">
+            <i class="fa fa-search"></i>
+        </button>
          <!-- Saved Search History-->
          <div class="card">
             <ul class="list-group list-group-flush" id="search-history-list">
@@ -72,7 +81,7 @@
         <div class="row">
             <div class="col-12">
                 <!--Heading-->
-                <h3>5-Day Forecast</h3>
+                <h3>Flight Forecast</h3>
                 
             </div>
         </div>
@@ -84,8 +93,9 @@
                     <h5 class="card-title">Date</h5>
                     <i class="fa fa-sun"></i>
                     <p class="card-text mb-0">Temp: </p>
-                    <p class="card-text mb-0">Wind: </p> 
-                    <p class="card-text">Humidity: </p>
+                    <p class="card-text mb-0">Price: </p> 
+                    <p class="card-text">Departing from: </p>
+                    <p class="card-text">Arriving at: </p>
                     </div>
                     </div>
                 </div>
@@ -102,6 +112,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <!--local script-->
     <script src="./js/weather.js"></script>
+    <script src="./js/flight.js"></script>
       
 </body>
 </html>

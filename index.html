@@ -1,108 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TravelSure</title>
-    
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" /> 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" /> 
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="./assets/style.css" />
 </head>
+
 <body>
-    <!--buid a header with page title-->
-<div class="container-fluid">
-<div class="row navbar navbar-lght bg-lght"> 
-<div class="col-12 text-center">
-<h1>Flight Dashboard</h1>
-</div>
-</div>
-<div class="row content-row">
-    <div class="col-12 col-md-3 bg-light pt-3">
-        <h4>Arrival City</h4>
-        <!--Search input-field and button-->
-        <form action="">
-            <div class="form-group input-group">
-                <input type="text" class="form-control" id="departure-city" placeholder="Enter city name ex. London">
-                <div class="input-group-append">
-                    <button class="btn btn-success" type="button" id="search-city-button">
-                        <i class="fa fa-search"></i>
-                    </button>
-                </div>
-            </div>
-
-            <br>
-            <h4>Departure City</h4>
-            <div class="form-group input-group">
-                <input type="text" class="form-control" id="arrival-city" placeholder="Enter city name ex. London">
-                <div class="input-group-append">
-                    <button class="btn btn-success" type="button" id="search-city-button">
-                        <i class="fa fa-search"></i>
-                    </button>
-                </div>
-            </div>
-        </form>
-
-        <div>
-            <label for="dateInput">From Date:</label>
-            <input class="form-control" type="date" id="dateInput">
-            </div>
-
-        <button class="btn btn-success" type="button" id="search-flight-button">
-            <i class="fa fa-search"></i>
-        </button>
-         <!-- Saved Search History-->
-         <div class="card">
-            <ul class="list-group list-group-flush" id="search-history-list">
-
-            </ul>
-            <!--Clears saved cities-->
-            <button id="clear-history" class="btn btn-sm btn-info hide">Clear Search History</button>
-         </div>
-    </div>
     
-    <div id="weather-content" class="col-12 col-md-9 ">
-        <div class="row">
-            <div class="col-12">
-
-                <!-- current weather section
-                <div class="city-info border rounded my-3 px-3 py-3">
-                    <h2 id="current-city">Current Weather At: <small class="text-muted" id="current-date"></small></h2>
-
-                    <p class="mb-0">Temperature: <span id="current-temp"></span></p>
-                    
-                    <p class="mb-0">Wind: <span id="current-wind-speed"></span></p>
-
-                    <p class="mb-0">Humidity: <span id="current-humidity"></span></p>
-                </div> -->
+    <!--buid a header with page title-->
+    <div class="container-fluid">
+        <div class="row navbar navbar-lght bg-lght">
+            <div class="col-12 text-center">
+                <h1>Flight Dashboard</h1>
             </div>
         </div>
-        <div class="row">
-            <div class="col-12">
-                <!--Heading-->
-                <h3>Flight Forecast</h3>
-                
-            </div>
-        </div>
-        <!--Forecast Section-->
-        <div id="five-day-forecast" class="row">
-            <div class="col-2">
-                <div class="card hide">
-                    <div class="card-body">
-                    <h5 class="card-title">Date</h5>
-                    <i class="fa fa-sun"></i>
-                    <p class="card-text mb-0">Temp: </p>
-                    <p class="card-text mb-0">Price: </p> 
-                    <p class="card-text">Departing from: </p>
-                    <p class="card-text">Arriving at: </p>
+        <div class="row content-row">
+            <div class="col-12 col-md-3 bg-light pt-3">
+                <h4>Departure City</h4>
+
+                <!--Search input-field and button-->
+                <form action="">
+                    <div class="form-group input-group">
+                        <input type="text" class="form-control" id="departure-city"
+                            placeholder="Enter city name ex. London">
+                        <div class="input-group-append">
+                            <button class="btn btn-success" type="button" id="search-city-button">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </div>
                     </div>
+
+                    <br>
+                    <h4>Arrival City</h4>
+                    <div class="form-group input-group">
+                        <input type="text" class="form-control" id="arrival-city"
+                            placeholder="Enter city name ex. London">
+                        <div class="input-group-append">
+                        </div>
+                    </div>
+
+                </form>
+
+                <div>
+                    <label for="dateInput">From Date:</label>
+                    <input class="form-control" type="date" id="dateInput">
+                </div>
+
+                <button class="btn btn-success" type="button" id="search-flight-button">
+                    <i class="fa fa-search"></i>
+                </button>
+                <!-- Saved Search History-->
+                <div class="card">
+                    <ul class="list-group list-group-flush" id="search-history-list">
+
+                    </ul>
+                    <!--Clears saved cities-->
+                    <button id="clear-history" class="btn btn-sm btn-info hide">Clear Search History</button>
+                </div>
+            </div>
+
+            <div id="weather-content" class="col-12 col-md-9 ">
+                <div class="row">
+                    <div class="col-12"></div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <!--Heading-->
+                        <h3>Flight Forecast</h3>
+
+                    </div>
+                </div>
+                <!--Forecast Section-->
+                <div id="five-day-forecast" class="row">
+                    <div class="col-2">
+                        <div class="card hide">
+                            <div class="card-body">
+                                <h5 class="card-title">Date</h5>
+                                <i class="fa fa-sun"></i>
+                                <p class="card-text mb-0">Temp: </p>
+                                <p class="card-text mb-0">Price: </p>
+                                <p class="card-text">Departing from: </p>
+                                <p class="card-text">Arriving at: </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-</div>
-</div>
+    </div>
 
 
 
@@ -113,6 +105,7 @@
     <!--local script-->
     <script src="./js/weather.js"></script>
     <script src="./js/flight.js"></script>
-      
+
 </body>
+
 </html>

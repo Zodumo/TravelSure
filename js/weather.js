@@ -162,12 +162,12 @@ function currentConditionsRequest(searchValue) {
 
 
         /////////// Flight append /////////
-        console.log(response.data.results.legs[0].destination.name);
+        console.log(response.data.results[0].id);
         arrival.text(response.data.results.legs[0].destination.name + "!!");
         forecastCardBody.append(arrival);
         forecastCardBody.append(departure);
 
-        
+
 
 
 

@@ -1,6 +1,5 @@
 // create variables to access the search section elements
-var searchCityInput = $("#departure-city");
-var searchCityInput2 = $("#arrival-city");
+var searchCityInput = $("#arrival-city");
 var searchCityButton = $("#search-city-button");
 var searchHistoryList = $('#search-history-list');
 var clearHistoryButton = $("#clear-history");
@@ -37,7 +36,7 @@ $(document).on("submit", function () {
 
   currentConditionsRequest(searchValue)
   searchHistory(searchValue);
-  // searchCityInput.val(""); 
+  searchCityInput.val("");
 });
 
 // Clicking the search button will trigger
@@ -50,7 +49,7 @@ searchCityButton.on("click", function (event) {
 
   currentConditionsRequest(searchValue)
   searchHistory(searchValue);
-  // searchCityInput.val(""); 
+  searchCityInput.val("");
 });
 
 // Clears the list of cities searched
@@ -97,6 +96,8 @@ function currentConditionsRequest(searchValue) {
     currentHumidity.text(response.main.humidity + "%");
     currentWindSpeed.text(response.wind.speed + " m/sec");
 
+    //----------------
+
     var lat = response.coord.lat;
     var lon = response.coord.lon;
 
@@ -128,10 +129,6 @@ function currentConditionsRequest(searchValue) {
         var forecastWind = $("<p class='card-text mb-0'>");
         var forecastHumidity = $("<p class='card-text mb-0'>");
 
-        /////////////
-        var arrival = $("<p class='card-text mb-0'>");
-        var departure = $("<p class='card-text mb-0'>");
-
 
         $('#five-day-forecast').append(forecastCol);
         forecastCol.append(forecastCard);
@@ -151,23 +148,17 @@ function currentConditionsRequest(searchValue) {
         forecastTemp.prepend("Temp: ");
         forecastTemp.append("&deg;C");
         //------------------
-
-        // response.data.results[0].destination.name
-        forecastWind.text(response.data.results[0].destination.name);
-        forecastWind.prepend("Wind: ");
-        forecastWind.append(" m/sec");
-        forecastHumidity.text(response.list[i].main.humidity);
-        forecastHumidity.prepend("Humidity: ");
-        forecastHumidity.append("%");
-
-
-        /////////// Flight append /////////
-        console.log(response.data.results[0].id);
-        arrival.text(response.data.results.legs[0].destination.name + "!!");
-        forecastCardBody.append(arrival);
-        forecastCardBody.append(departure);
-
-
+        // forecastWind.text(response.list[i].wind.speed); 
+        // forecastWind.text(response.list[i].wind.speed); 
+        //---was "Wind"
+        forecastWind.prepend("Departure: ");
+        //-----was "m/sec"
+        forecastWind.append(" ");
+        // forecastHumidity.text(response.list[i].main.humidity);
+        //------was "Humidity" 
+        forecastHumidity.prepend("Arrival: ");
+        //--------"%"
+        forecastHumidity.append("");
 
 
 
@@ -257,5 +248,4 @@ function showClear() {
     clearHistoryButton.removeClass("hide");
   }
 };
-
 

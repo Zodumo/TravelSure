@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    
+
     <!--buid a header with page title-->
     <div class="container-fluid">
         <div class="row navbar navbar-lght bg-lght">
@@ -28,12 +28,9 @@
                 <!--Search input-field and button-->
                 <form action="">
                     <div class="form-group input-group">
-                        <input type="text" class="form-control" id="departure-city"
+                        <input type="text" class="form-control" id="departure-city" data-departure
                             placeholder="Enter city name ex. London">
                         <div class="input-group-append">
-                            <button class="btn btn-success" type="button" id="search-city-button">
-                                <i class="fa fa-search"></i>
-                            </button>
                         </div>
                     </div>
 
@@ -43,20 +40,18 @@
                         <input type="text" class="form-control" id="arrival-city"
                             placeholder="Enter city name ex. London">
                         <div class="input-group-append">
+                            <button class="btn btn-success" type="button" id="search-city-button">
+                                <i class="fa fa-search"></i>
+                            </button>
                         </div>
                     </div>
 
                 </form>
 
-                <div>
-                    <label for="dateInput">From Date:</label>
-                    <input class="form-control" type="date" id="dateInput">
-                </div>
-
                 <button class="btn btn-success" type="button" id="search-flight-button">
                     Search
                 </button>
-                <!-- Saved Search History-->
+                <!-- Saved Search History -->
                 <div class="card">
                     <ul class="list-group list-group-flush" id="search-history-list">
 
@@ -73,7 +68,7 @@
                 <div class="row">
                     <div class="col-12">
                         <!--Heading-->
-                        <h3>Flight Forecast</h3>
+                        <h3>TravelSure</h3>
 
                     </div>
                 </div>
@@ -92,6 +87,16 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title"></h5>
+                        <h6 class="card-subtitle mb-2 text-muted"></h6>
+                        <p class="card-text"></p>
+                        <a href="#" class="card-link">Pricing</a>
+                        <a href="#" class="card-link"></a>
+                    </div>
+                </div> -->
             </div>
         </div>
     </div>
@@ -103,8 +108,9 @@
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <!--local script-->
-    <script src="./js/weather.js"></script>
+
     <script src="./js/flight.js"></script>
+    <script src="./js/weather.js"></script>
 
 </body>
 

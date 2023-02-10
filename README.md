@@ -7,10 +7,10 @@ This travel API combines the functionality of OpenWeather API and GoFlightLabs t
 # Usage
 When using this API, users can input the name of the departure airport and arrival airport. The API will then retrieve flight options from GoFlightLabs and display them to the user. Additionally, the API will use the OpenWeather API to retrieve the weather forecast for the arrival city for the next 5 days.
 
-Deploy using code: 
+Deploy using code: https://treywsuarez.github.io/TravelSure/
 
 # Screenshots
-
+![TravelSure Search](./assets/images/screenshot_2023-02-10_at_18.02.21_720.png)
 
 # Features
 - Search for flights based on departure airport, arrival airport, and travel dates

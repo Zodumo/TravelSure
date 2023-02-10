@@ -3,6 +3,8 @@
 body {
   font-family: 'Muli', sans-serif;
   color: rgba(0, 0, 0, 0.8);
+  background-color: lightblue;
+  padding: 1%;
   
 }
 h1 {
@@ -22,4 +24,11 @@ html, body, .container-fluid, .content-row {
 
 .card {
     background-color: #c8b6ff;
+}
+
+h1{
+  font-size: 64px;
+  padding: 2%;
+  border: #c8b6ff;
+  font-weight: bolder;
 }
